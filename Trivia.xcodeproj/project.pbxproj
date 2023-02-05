@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28600599298F5F1900DFCAD3 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 28600598298F5F1900DFCAD3 /* ConfettiSwiftUI */; };
+		2860059B298F655800DFCAD3 /* ParticlesModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2860059A298F655800DFCAD3 /* ParticlesModifier.swift */; };
+		2860059D298F65AF00DFCAD3 /* FireworkParticlesGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2860059C298F65AF00DFCAD3 /* FireworkParticlesGeometryEffect.swift */; };
+		2860059F298F670800DFCAD3 /* ParticleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2860059E298F670800DFCAD3 /* ParticleAnimation.swift */; };
 		28AAC631298F227400677353 /* TriviaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAC630298F227400677353 /* TriviaApp.swift */; };
 		28AAC633298F227400677353 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAC632298F227400677353 /* ContentView.swift */; };
 		28AAC635298F227700677353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28AAC634298F227700677353 /* Assets.xcassets */; };
@@ -23,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2860059A298F655800DFCAD3 /* ParticlesModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlesModifier.swift; sourceTree = "<group>"; };
+		2860059C298F65AF00DFCAD3 /* FireworkParticlesGeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireworkParticlesGeometryEffect.swift; sourceTree = "<group>"; };
+		2860059E298F670800DFCAD3 /* ParticleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleAnimation.swift; sourceTree = "<group>"; };
 		28AAC62D298F227400677353 /* Trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AAC630298F227400677353 /* TriviaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaApp.swift; sourceTree = "<group>"; };
 		28AAC632298F227400677353 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,12 +51,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28600599298F5F1900DFCAD3 /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		286005A0298F68C700DFCAD3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				28AAC642298F2B8900677353 /* Extensions.swift */,
+				28AAC651298F43AA00677353 /* TriviaManager.swift */,
+				2860059A298F655800DFCAD3 /* ParticlesModifier.swift */,
+				2860059C298F65AF00DFCAD3 /* FireworkParticlesGeometryEffect.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
 		28AAC624298F227400677353 = {
 			isa = PBXGroup;
 			children = (
@@ -73,10 +92,9 @@
 				28AAC641298F26FD00677353 /* Views */,
 				28AAC63E298F24F300677353 /* Components */,
 				28AAC648298F325800677353 /* Models */,
+				286005A0298F68C700DFCAD3 /* Support Files */,
 				28AAC634298F227700677353 /* Assets.xcassets */,
 				28AAC636298F227700677353 /* Preview Content */,
-				28AAC642298F2B8900677353 /* Extensions.swift */,
-				28AAC651298F43AA00677353 /* TriviaManager.swift */,
 			);
 			path = Trivia;
 			sourceTree = "<group>";
@@ -95,6 +113,7 @@
 				28AAC63F298F252800677353 /* PrimaryButton.swift */,
 				28AAC646298F2F5200677353 /* ProgressBar.swift */,
 				28AAC64B298F32F600677353 /* AnswerRow.swift */,
+				2860059E298F670800DFCAD3 /* ParticleAnimation.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -134,6 +153,9 @@
 			dependencies = (
 			);
 			name = Trivia;
+			packageProductDependencies = (
+				28600598298F5F1900DFCAD3 /* ConfettiSwiftUI */,
+			);
 			productName = Trivia;
 			productReference = 28AAC62D298F227400677353 /* Trivia.app */;
 			productType = "com.apple.product-type.application";
@@ -162,6 +184,9 @@
 				Base,
 			);
 			mainGroup = 28AAC624298F227400677353;
+			packageReferences = (
+				28600597298F5F1900DFCAD3 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			productRefGroup = 28AAC62E298F227400677353 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -198,6 +223,9 @@
 				28AAC64A298F328600677353 /* Answer.swift in Sources */,
 				28AAC631298F227400677353 /* TriviaApp.swift in Sources */,
 				28AAC647298F2F5200677353 /* ProgressBar.swift in Sources */,
+				2860059F298F670800DFCAD3 /* ParticleAnimation.swift in Sources */,
+				2860059D298F65AF00DFCAD3 /* FireworkParticlesGeometryEffect.swift in Sources */,
+				2860059B298F655800DFCAD3 /* ParticlesModifier.swift in Sources */,
 				28AAC643298F2B8900677353 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +427,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28600597298F5F1900DFCAD3 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28600598298F5F1900DFCAD3 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28600597298F5F1900DFCAD3 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28AAC625298F227400677353 /* Project object */;
 }

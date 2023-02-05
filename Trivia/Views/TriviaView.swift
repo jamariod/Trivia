@@ -7,15 +7,18 @@
 
 import SwiftUI
 
+
 struct TriviaView: View {
     @EnvironmentObject var triviaManager: TriviaManager
+    @State private var counter = 0
     
     var body: some View {
         if triviaManager.reachedEnd {
             VStack(spacing: 20) {
+                ParticleAnimation()
                 Text("Trivia")
                     .lilacTitle()
-                
+                    
                 Text("Congratulations, you completed the game! 🥳")
                 
                 Text("You scored \(triviaManager.score) out of \(triviaManager.length)")
